@@ -1,0 +1,95 @@
+<section class="d-flex flex-column justify-content-center align-items-center">
+  <h1 class="text-uppercase fw-bold">portfolio component</h1>
+  <div logo class="position-relative pb-3">
+    <i class="mx-3 fa-solid fa-star"></i>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div (click)="showLayer(img1)" class="px-2 pb-5">
+          <div layer class="position-relative">
+            <img class="w-100 rounded-3" [src]="[img1]" alt="img 1" />
+            <div
+              inlayer
+              class="bg-main opa rounded-3 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+            >
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div (click)="showLayer(img2)" class="px-2 pb-5">
+          <div layer class="position-relative">
+            <img class="w-100 rounded-3" [src]="[img2]" alt="img 1" />
+            <div
+              inlayer
+              class="bg-main opa rounded-3 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+            >
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div (click)="showLayer(img3)" class="px-2 pb-5">
+          <div layer class="position-relative">
+            <img class="w-100 rounded-3" [src]="[img3]" alt="img 1" />
+            <div
+              inlayer
+              class="bg-main opa rounded-3 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+            >
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div (click)="showLayer(img1)" class="px-2 pb-3">
+          <div layer class="position-relative">
+            <img class="w-100 rounded-3" [src]="[img1]" alt="img 1" />
+            <div
+              inlayer
+              class="bg-main opa rounded-3 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+            >
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div (click)="showLayer(img2)" class="px-2 pb-5">
+          <div layer class="position-relative">
+            <img class="w-100 rounded-3" [src]="[img2]" alt="img 1" />
+            <div
+              inlayer
+              class="bg-main opa rounded-3 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+            >
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div (click)="showLayer(img3)" class="px-2 pb-3">
+          <div layer class="position-relative">
+            <img class="w-100 rounded-3" [src]="[img3]" alt="img 1" />
+            <div
+              inlayer
+              class="bg-main opa rounded-3 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+            >
+              <i class="text-white fa-solid fa-plus fa-6x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    (click)="distroyLayer()"
+    [class.d-none]="check"
+    class="position-fixed start-0 w-100 top-0 bg h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center"
+  >
+    <img alt="" width="500px" [src]="[imglayer]" />
+  </div>
+</section>

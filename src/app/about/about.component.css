@@ -1,0 +1,13 @@
+section {
+  background: #1abc9c;
+  min-height: calc(-58px + 100vh);
+  margin-top: 40px;
+}
+div[logo]::after,
+div[logo]::before {
+  content: "";
+  display: inline-block;
+  background-color: white;
+  height: 4px;
+  width: 80px;
+}
