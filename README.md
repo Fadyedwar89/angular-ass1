@@ -1,5 +1,7 @@
 # click here
-https://fady-frist-ass1.netlify.app/startFramework
+
+https://fady-frist-ass1.netlify.app
+
 # Ass1
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
