@@ -8,11 +8,11 @@ import { FooterComponent } from './footer/footer.component';
 import { StartFrameworkComponent } from './start-framework/start-framework.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'startFramework', pathMatch: 'full' },
+  { path: '', redirectTo: 'startframework', pathMatch: 'full' },
   {
-    path: 'startFramework',
+    path: 'startframework',
     component: StartFrameworkComponent,
-    title: 'startFramework',
+    title: 'startframework',
   },
   { path: 'about', component: AboutComponent, title: 'about' },
   { path: 'contact', component: ContactComponent, title: 'contact' },
